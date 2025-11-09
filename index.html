@@ -26,28 +26,108 @@
 				--color-mint-700: oklch(0.56 0.32 145);
 			}
 		</style>
+		<link
+			rel="stylesheet"
+			href="reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<title>CSS</title>
 	</head>
 
 	<body class="w-screen min-h-dvh">
-		<header>
-  <nav>
-    <ul>
-      <li><a href="ic-logo.svg">COLMARACADEMY</a></li>
+		 <header class="header">
+			<img src="images/ic-logo.svg"> 
+    <div class="logo"> <span class="colmar">COLMAR</span>
+  <span class="academy">ACADEMY</span>
+</div>
+    <nav class="nav">
+      <ul>
+      <li><a href="ic-logo.svg"></a></li>
       <li><a href="ic-on-campus.svg">On campus</a></li>
       <li><a href="ic-online.svg">Online or companies</a></li>
-    <li><a href="ic-login">Sign in</a></li>
+    <li><a href="ic-login.svg">Sign in</a></li>
 	</ul>
+	<div class="icon-row ">
+      <img src="images/ic-on-campus.svg" class="menu-icon" onclick="toggleMenu()" alt="Menu Icon">
+	  <img src="images/ic-online.svg" class="menu-icon" onclick="toggleMenu()" alt="Menu Icon">
+	  <img src="images/ic-login.svg" class="menu-icon" onclick="toggleMenu()" alt="Menu Icon">
+</div>
   </nav>
 </header>
+
 <main>
 	<section class="=hero">
+		<div class="hero-content">
 		<div class="hero-image">
-      <img src="banner.jpg" alt="Study group">
+      <img src="images/banner.jpg" alt="Study group">
     </div>
+	<div  class="hero-text">
+	  <h1>Learn something new everyday</h1>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+   <div class="button-wrapper">
+	<a href="#" class="btn">Start here</a>
+	</div>
+</div>
+</div>
+	</section>
 
+
+	<section class="information">
+		<div class="information-content">
+		<div class="information-image
+		">
+			<img src="images/information-main.jpg" alt="Study group">
+		</div>
+
+		<div class="information-text">
+			<h1>It doesn,t hurt to keep practicing</h1>
+			<p>“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+		<p1>Emanuel, Sr Strategist at Hiring.com</p1>
+		</div>
+	</div>
+
+
+<div class="box1-content">
+		<div class="box1-image">
+			<img src="images/information-orientation.jpg" alt="Study group">
+		<div class="box1-text">
+			<h>Orientation date</h>
+			<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+			<a href="#" class="read-more-btn">Read more</a>
+		</div>
+		</div>
+	</div>
+
+
+
+<div class="box2-content">
+		<div class="box2-image">
+			<img src="images/information-campus.jpg" alt="Study group">
+		</div>
+		<div class="box2-text">
+			<h>Our campus</h>
+			<p>Find which campus is close by you</p>
+			<a href="#" class="read-more-btn">Read more</a>
+		</div>
+</div>
+
+
+<div class="box3-content">
+		<div class="box3-image">
+			<img src="images/information-guest-lecture.jpg" alt="Study group">
+		</div>
+		<div class="box3-text">
+			<h>Our guest lecture</h>
+			<p>Join a keynote with Oliber Sack about music in medical treatment</p>
+			<a href="#" class="read-more-btn">Read more</a>
+		</div>
+</div>
 	</section>
 </main>
-		
+
 
 
 

@@ -1,0 +1,277 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px 32px 05px;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  padding: 10px 0px 05px;
+  gap: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+
+.colmar {
+  color: #454444; /* สีดำเข้ม */
+ font-weight: 600;
+}
+
+.academy {
+  color: #afabab; /* สีเทาอ่อน */
+  font-weight: normal;
+}
+
+
+.nav {
+  flex: 1; /* ให้ขยายเต็มพื้นที่ที่เหลือใน header */
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;       /* ขยายเต็ม container */
+  padding: 0;        /* ลบ padding ที่ดันเมนูเข้ามา */
+  margin: 0;         /* ลบ margin ที่ดันเมนูเข้ามา */
+  gap: 16px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-row {
+  display: flex;
+ justify-content: flex-end ;
+  align-items: center ;
+  flex-wrap: nowrap ;
+  gap: 64px;
+  padding: 05px 46px;
+}
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 24px;
+  align-items: center;
+}
+
+
+.hero-content {
+   width: 100vw;       /* เต็มความกว้างของ viewport */
+  height: 30h;      /* เต็มความสูงของ viewport */
+  background-color: #e9e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 0px 30px;
+  box-sizing: border-box;
+}
+
+.hero-image {
+  max-width: auto;                  /*จำกัดความกว้างของรูป*/height: auto;
+  background-color: #f5f5f5;      /*สีพื้นหลังเทาอ่อน*/
+  padding: 0px;                     /*เพิ่มช่องว่างรอบรูป*/
+  border-radius: 8px;               /*มุมโค้งนิดๆ*/
+  margin: 0 auto;                   /* จัดให้อยู่ตรงกลาง */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.hero-text {
+  flex: 1 1 40%;
+  padding: 0 15px;
+}
+
+.hero-text h1 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  padding: 0 32px;
+  font-weight: bold;
+  color: #565454;
+}
+
+.hero-text p {
+  font-size: 18px;
+   font-weight: 500;
+   padding: 0 32px;
+  margin-bottom: 48px;
+  color: #393939;
+}
+
+.button-wrapper {
+  display: flex;
+  padding: 0 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #414141;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+   width: 290px;
+}
+
+---------------------------------------------------------------
+.information {
+ display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+
+.information-image {
+ width: 70%;
+  height: auto;
+  display: block;
+   border-radius: 8px;               /*มุมโค้งนิดๆ*/
+  margin: 0px;                   /* จัดให้อยู่ตรงกลาง */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+padding: 32px 30px 0px 30px;
+}
+
+.information-text {
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+.information-text h1 {
+  display: block;
+  margin-top: 16px;
+}
+
+.box1-content {
+   display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 24px;
+
+
+}
+.box1-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    display: none; 
+  }
+
+.nav {
+  flex: 1; /* ให้ขยายเต็มพื้นที่ที่เหลือใน header */
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;       /* ขยายเต็ม container */
+  padding: 0;        /* ลบ padding ที่ดันเมนูเข้ามา */
+  margin: 0;         /* ลบ margin ที่ดันเมนูเข้ามา */
+  gap:  16px;
+  list-style: none;
+}
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+.hero-image{
+   width: 100vw;
+    height: auto;
+    object-fit: cover;
+     margin: 0;
+  padding: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+  }
+
+.hero-text {
+  text-align: left;
+  padding: 20px 35px 15px 35px;
+}
+
+  .hero-text h1 {
+    font-size: 30px;
+    display: flex;
+    margin: 0;
+  padding: 0px 35px 15px 0px;
+  }
+
+  .hero-text p {
+  text-align: left;
+  padding: 0px 35px 0px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  }
+
+  .button-wrapper {
+  display: flex;
+  padding: 0 0px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #848282;
+  text-decoration: none;
+   width: 350px;
+   margin-top: -16px;
+}
+}
+
